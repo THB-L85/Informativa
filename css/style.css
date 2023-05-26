@@ -1,0 +1,119 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.encabezado{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 350px;
+}
+.img{
+    align-self: center;
+}
+.img img{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+.titulo {
+    font-size: 15px;
+    text-align: center;
+    align-self: center;
+}
+.acerca{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    align-self: center;
+} 
+@media (min-width: 768px) {
+    .encabezado{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        column-gap: 2rem;
+        height: 150px;
+        justify-items: center;
+    }
+    .img img{
+        width: 100%;
+        height: auto;
+        max-height: 150px;
+    }
+}
+.principal{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #203864;
+    margin-bottom: 35px;
+}
+.principal h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffff;
+    text-align: center;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    column-gap: 2rem;
+}
+.contenido img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.contenido label{
+    padding: 15px;
+    background-color: #203864;
+    color: #ffff;
+    text-align: justify;
+    font-size: larger;
+}
+.apartados{
+    display: grid;
+}
+.apartados a{
+    background-color: #203864;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+.fila{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 2rem;
+    margin: 0px 20px 40px 20px;
+    height: 100px;
+}
+.contenedor-subtema{
+    display: grid;
+    align-items: center;
+    background-color: #203864;
+    color: #ffff;
+    text-align: center;
+}
+.contenedor-contenido{
+    display: grid;
+    align-items: center;
+    padding: 15px;
+    background-color: azure;
+    text-align: justify;
+    font-size: larger;
+}
+.fila2{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    column-gap: 2rem;
+    margin: 0px 20px 40px 20px;
+    height: 100px;
+}
+.footer{
+    display: grid;
+    margin-top: 25px;
+}
