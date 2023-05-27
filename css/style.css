@@ -60,13 +60,13 @@ html{
 }
 .contenido{
     display: flex;
-    flex-flow: column;
+    flex-flow:wrap;
 }
 .contenido img{
-    width: 75%;
+    width: 40%;
     height: auto;
     border-radius: 15px;
-    align-self: center;
+    /* align-self: center; */
 }
 .contenido label{
     height: auto;
