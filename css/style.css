@@ -41,10 +41,11 @@ html{
     }
 }
 .principal{
-    display: grid;
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 150px;
+    height: 100px;
     background-color: #203864;
     margin-bottom: 35px;
 }
@@ -54,22 +55,27 @@ html{
     color: #ffff;
     text-align: center;
 }
+@media (min-width: 768px) {
+    
+}
 .contenido{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    column-gap: 2rem;
+    display: flex;
+    flex-flow: column;
 }
 .contenido img{
-    width: 100%;
+    width: 75%;
     height: auto;
     border-radius: 15px;
+    align-self: center;
 }
 .contenido label{
-    padding: 15px;
+    height: auto;
     background-color: #203864;
     color: #ffff;
     text-align: justify;
-    font-size: larger;
+    font-size: 20px;
+    padding: 15px;
+    margin: 20px 0px;
 }
 .apartados{
     display: grid;
