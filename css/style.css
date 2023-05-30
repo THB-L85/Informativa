@@ -52,7 +52,7 @@ html{
 }
 .principal h1{
     font-weight: bold;
-    font-size: 50px;
+    font-size: 25px;
     color: #ffff;
     text-align: center;
 }
@@ -94,6 +94,9 @@ html{
     background-color: #4073d1;
 }
 @media (min-width: 768px) {
+    .principal h1{
+        font-size: 50px;
+    }
     .contenido{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -143,7 +146,39 @@ html{
     margin: 0px 20px 40px 20px;
     height: 100px;
 }
-.footer{
-    display: grid;
-    margin-top: 25px;
+
+@media (min-width: 768px) {
+    .fila{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        column-gap: 2rem;
+        margin: 0px 20px 40px 20px;
+        height: 100px;
+    }
+    .contenedor-subtema{
+        display: grid;
+        align-items: center;
+        background-color: #203864;
+        color: #ffff;
+        text-align: center;
+    }
+    .contenedor-contenido{
+        display: grid;
+        align-items: center;
+        padding: 15px;
+        background-color: azure;
+        text-align: justify;
+        font-size: larger;
+    }
+    .fila2{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        column-gap: 2rem;
+        margin: 0px 20px 40px 20px;
+        height: 100px;
+    }
+    .footer{
+        display: grid;
+        margin-top: 25px;
+    }
 }
